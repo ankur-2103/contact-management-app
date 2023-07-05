@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Contact from "./Pages/Contact";
+import MapsAndCharts from "./Pages/MapsAndCharts";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Sidebar } from "./Components/Sidebar";
+import NotFound from "./Pages/NotFound";
 
-function App() {
+// This file creates different routes
+
+// Create routes
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex">
+      <QueryClientProvider client={new QueryClient()}>
+        <BrowserRouter>
+          <Sidebar/>
+          <Routes>
+            <Route index path="/contact" element={<Contact/>} />
+            <Route path="/maps-and-charts" element={<MapsAndCharts />} />
+            <Route path="*" element={<NotFound/>} />
+          </Routes>
+        </BrowserRouter>
+      </QueryClientProvider>
     </div>
   );
 }
