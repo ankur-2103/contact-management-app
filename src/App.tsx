@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className="flex">
       <QueryClientProvider client={new QueryClient()}>
-        <BrowserRouter>
+        <BrowserRouter basename="/contact-management-app">
           <Sidebar/>
           <Routes>
             <Route index path="/contact" element={<Contact/>} />
