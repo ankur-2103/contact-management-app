@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/contact-management-app/contact/static/css/main.40c14e0a.css",
+    "main.js": "/contact-management-app/contact/static/js/main.b23dcfd6.js",
+    "static/media/phone.svg": "/contact-management-app/contact/static/media/phone.0a4cef8bbf20e6895bbc95b76dff718c.svg",
+    "index.html": "/contact-management-app/contact/index.html",
+    "static/media/data.svg": "/contact-management-app/contact/static/media/data.ed5d663f51aba2d5a4911d8826e6a40b.svg",
+    "static/media/close-one.svg": "/contact-management-app/contact/static/media/close-one.401a8737207d2aca299c09dcc01589e8.svg",
+    "main.40c14e0a.css.map": "/contact-management-app/contact/static/css/main.40c14e0a.css.map",
+    "main.b23dcfd6.js.map": "/contact-management-app/contact/static/js/main.b23dcfd6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40c14e0a.css",
+    "static/js/main.b23dcfd6.js"
+  ]
+}
